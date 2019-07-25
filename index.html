@@ -33,17 +33,17 @@
         </div>
         <div class="buttons">
             <h2>Chętnie ci pomogę!</h2>
-            <a href="#contact">Skontaktuj się</a>
-            <a href="#">Zobacz moje CV</a>
+            <a href="#contact" class="button">Skontaktuj się</a>
+            <a href="#" class="button">Zobacz moje CV</a>
         </div>
     </header>
     <main>
         <article id="aboutMe">
             <header>
-                <h2>O mnie</h2>
+                <h3>O mnie</h3>
             </header>
-            <div class="container">
-                <section class="shortInfo">
+            <div class="content">
+                <section class="info shortInfo">
                     <img src="" alt="Damian Bartosz - zdjęcie">
                     <ul>
                         <li>Imie i nazwisko: <span class="distinction">Damian Bartosz</span></li>
@@ -53,23 +53,89 @@
                         <li>E-mail: <span class="distinction">abc@gmail.com</span></li>
                     </ul>
                 </section>
-                <section class="longInfo">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
+                <section class="info last longInfo">
+                    <p></p>
                 </section>
             </div>
         </article>
         <article id="skills">
             <header>
-                <h2>Umiejętności</h2>
+                <h3>Umiejętności</h3>
             </header>
-            <div class="container">
-                <section class="skill">
-                    
+            <div class="content">
+                <section class="info">
+                    <img src="" alt="">
+                    <h4>Software</h4>
+                    <p>Java, C++</p>
+                </section>
+                <section class="info">
+                    <img src="" alt="">
+                    <h4>Front End</h4>
+                    <p>Html, CSS, JavaScript</p>
+                </section>
+                <section class="info last">
+                    <img src="" alt="">
+                    <h4>Back End</h4>
+                    <p>Node.js</p>
                 </section>
             </div>
+        </article>
+        <article class="portfolio">
+            <header>
+                <h3>Portfolio</h3>
+            </header>
+            <div class="content">
+                <section class="software">
+                    <h2>Software</h2>
+                    <p>Zaprojektowane przeze mnie aplikacje desktopowe i mobilne</p>
+                    <a href="#" class="button">Zobacz</a>
+                </section>
+                <div class="image first"></div>
+                <div class="image second"></div>
+                <div class="image third"></div>
+                <section class="web">
+                    <h2>Web Design</h2>
+                    <p>Galeria stron internetowych mojego autorstwa</p>
+                    <a href="#" class="button">Zobacz</a>
+                </section>
+            </div>
+        </article>
+        <article>
+            <header>
+                <h3>Skontaktuj się</h3>
+                <div class="content">
+                    <section class="contact">
+                        <div class="message">
+                            <p>
+                                Masz pytanie? Napisz do mnie, a postaram się odpowiedzieć najszybciej jak to tylko
+                                możliwe.
+                            </p>
+                        </div>
+                        <div class="contactData">
+                            <strong>
+                                Damian Bartosz
+                                <br>
+                                Polska, Wrocław
+                            </strong>
+                            <br>
+                            ul. Bezpieczna 21
+                            <br>
+                            +48 123-456-789
+                            <br>
+                            <a href="">abc@gmail.com</a>
+                        </div>
+                    </section>
+                    <section class="mailMe">
+                        <form>
+                            <input type="text" name="name" id="name" value="Imie">
+                            <input type="text" name="name" id="name" value="Twój adres e-mail">
+                            <input type="text" name="name" id="name" value="Temat">
+                            <input type="text" name="name" id="name" value="Wiadomość">
+                            <button type="submit" class="button">Wyślij</button>
+                        </form>
+                    </section>
+                </div>
+            </header>
         </article>
     </main>
 </body>
