@@ -1,5 +1,6 @@
-:root{
+:root {
     --main-color: rgb(80, 80, 240);
+    --font-color: rgb(0, 47, 255);
 }
 
 .bar {
@@ -36,7 +37,7 @@ a {
     color: #000;
 }
 
-a:hover{
+a:hover {
     text-decoration-line: none;
     color: black;
 }
@@ -66,8 +67,18 @@ h3 {
     text-align: center;
     padding-top: 77px;
     padding-bottom: 290px;
-    background-image: linear-gradient(-90deg, rgb(141, 141, 243), var(--main-color));
+    background: url("../img/internet-keyboard-laptop-109371.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.banner h1{
+    color: var(--font-color);
+    text-shadow: 0 0 5px white;
+}
+
+.banner h3{
     color: white;
+    text-shadow: 0 0 0.2em var(--font-color);
 }
 
 .buttons {
@@ -81,14 +92,15 @@ h3 {
     height: 40px;
     width: 100%;
     align-self: center;
-    background-image: linear-gradient(-90deg, rgb(141, 141, 243), var(--main-color));
+    background-image: linear-gradient(-90deg, var(--font-color), var(--main-color));
     border-radius: 15px;
     border: none;
     font-size: 1.2rem;
     color: white;
 }
 
-.button:hover, .button:focus{
+.button:hover,
+.button:focus {
     transition: all 0.15s ease-in-out;
     color: var(--main-color);
     border: 1px solid var(--main-color);
@@ -170,27 +182,56 @@ h3 {
     width: 70%;
 }
 
-#contact{
+.row{
+    color: white;
+}
+
+.software{
+    background: url(../img/code-coding-conceptual-276452.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.first{
+    background: url(../img/blurred-background-coffee-cup-contemporary-908284.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.second{
+    background: url(../img/design-development-electronics-326424.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.third{
+    background: url(../img/arachnid-art-black-and-white-206901.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.web{
+    background: url(../img/apple-black-and-white-camera-196659.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#contact {
     position: relative;
     left: 40%;
     width: 60%;
 }
 
-.col-xs-12{
-    border: 1px solid red;
+.row>* {
+    height: 300px;
 }
 
-.mailMe{
+.mailMe {
     display: flex;
     flex-direction: column;
     margin: 5%;
 }
 
-#contactContent{
+#contactContent {
     padding: 0;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -208,11 +249,12 @@ h3 {
     box-shadow: 5px 0px 5px 0px rgba(200, 200, 250, 0.5);
 }
 
-.contact a{
+.contact a {
     color: white;
 }
 
-input[type="text"], textarea{
+input[type="text"],
+textarea {
     border-radius: 5px;
     border: 1px solid var(--main-color);
     border: none;
@@ -223,18 +265,19 @@ input[type="text"], textarea{
     outline: none;
 }
 
-input[type="text"]:focus, textarea:focus{
+input[type="text"]:focus,
+textarea:focus {
     box-shadow: 0px 0px 5px 2px rgba(200, 200, 250, 0.5);
     border: 1px solid rgb(200, 200, 250);
     background-color: rgb(230, 230, 250);
 }
 
-form{
+form {
     position: relative;
     height: 370px;
 }
 
-form .button{
+form .button {
     width: 20%;
     min-width: 80px;
     position: absolute;
@@ -242,6 +285,6 @@ form .button{
     bottom: 0;
 }
 
-#mes{
+#mes {
     height: 150px;
 }
