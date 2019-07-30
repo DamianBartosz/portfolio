@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Damian Bartosz - Portfolio</title>
-    <meta name="description" content="Strona zawierająca portfolio programisty Damiana Bartosza!">
+    <meta name="description" content="Strona zawierająca portfolio Damiana Bartosza">
     <meta name="keywords" content="portfolio, wizytówka, Damian, Bartosz, programista, web, developer">
     <meta name="author" content="Damian Bartosz">
 
     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css\style.css">
 
 </head>
@@ -33,12 +36,6 @@
         </div>
         <div class="buttons">
             <h2>W czym mogę pomóc?!</h2>
-            <!-- <div class="button">
-                <a href="#contact">Kontakt</a>
-            </div>
-            <div class="button">
-                <a href="#">Moje CV</a>
-            </div> -->
             <a href="#contact" class="buttonOutside">
                 <input class="button" type="button" value="Kontakt">
             </a>
@@ -48,28 +45,33 @@
         </div>
     </header>
     <main>
-        <article id="aboutMe">
-            <header>
+        <article class="section">
+            <header id="aboutMe">
                 <h3>O mnie</h3>
             </header>
             <div class="content">
-                <section class="info shortInfo">
-                    <img src="" alt="Damian Bartosz - zdjęcie">
+                <img src="" alt="Damian Bartosz - zdjęcie" class="photo">
+                <section class="shortInfo">
                     <ul>
-                        <li>Imie i nazwisko: <span class="distinction">Damian Bartosz</span></li>
+                        <li>Imie: <span class="distinction">Damian</span></li>
+                        <li>Nazwisko: <span class="distinction">Bartosz</span></li>
                         <li>Wiek: <span class="distinction">20 lat</span></li>
                         <li>Profil: <span class="distinction">Fullstack</span></li>
                         <li>Telefon: <span class="distinction">+48 123-456-789</span></li>
                         <li>E-mail: <span class="distinction">abc@gmail.com</span></li>
                     </ul>
                 </section>
-                <section class="info last longInfo">
-                    <p></p>
+                <div class="dotts"></div>
+                <section class="longInfo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
                 </section>
             </div>
         </article>
-        <article id="skills">
-            <header>
+        <article class="section">
+            <header id="skills">
                 <h3>Umiejętności</h3>
             </header>
             <div class="content">
@@ -78,80 +80,92 @@
                     <h4>Software</h4>
                     <p>Java, C++</p>
                 </section>
+                <div class="dotts"></div>
                 <section class="info">
                     <img src="" alt="">
                     <h4>Front End</h4>
                     <p>Html, CSS, JavaScript</p>
                 </section>
-                <section class="info last">
+                <div class="dotts"></div>
+                <section class="info">
                     <img src="" alt="">
                     <h4>Back End</h4>
                     <p>Node.js</p>
                 </section>
             </div>
         </article>
-        <article id="portfolio">
-            <header>
+        <article class="container-fluid">
+            <header id="portfolio">
                 <h3>Portfolio</h3>
             </header>
-            <div class="content">
-                <section class="software">
+            <div class="row">
+                <section class="col-xs-12 col-md-5 software">
                     <h2>Software</h2>
                     <p>Zaprojektowane przeze mnie aplikacje desktopowe i mobilne</p>
                     <a href="#" class="buttonOutside">
-                        <input  class="button" type="button" value="Zobacz">
+                        <input class="button" type="button" value="Zobacz">
                     </a>
                 </section>
-                <div class="image first"></div>
-                <div class="image second"></div>
-                <div class="image third"></div>
-                <section class="web">
+                <div class="col-xs-12 col-md-3 first"></div>
+                <div class="col-xs-12 col-md-4 second"></div>
+                <div class="col-xs-12 col-md-3 third"></div>
+                <section class="col-xs-12 col-md-9 web">
                     <h2>Web Design</h2>
                     <p>Galeria stron internetowych mojego autorstwa</p>
                     <a href="#" class="buttonOutside">
-                        <input  class="button" type="button" value="Zobacz">
+                        <input class="button" type="button" value="Zobacz">
                     </a>
                 </section>
             </div>
         </article>
-        <article id="contact">
-            <header>
+        <article class="section">
+            <header id="contact">
                 <h3>Skontaktuj się</h3>
-                <div class="content">
-                    <section class="contact">
-                        <div class="message">
-                            <p>
-                                Masz pytanie? Napisz do mnie, a postaram się odpowiedzieć najszybciej jak to tylko
-                                możliwe.
-                            </p>
-                        </div>
-                        <div class="contactData">
-                            <strong>
-                                Damian Bartosz
-                                <br>
-                                Polska, Wrocław
-                            </strong>
-                            <br>
-                            ul. Bezpieczna 21
-                            <br>
-                            +48 123-456-789
-                            <br>
-                            <a href="">abc@gmail.com</a>
-                        </div>
-                    </section>
-                    <section class="mailMe">
-                        <form>
-                            <input type="text" name="name" id="name" value="Imie">
-                            <input type="text" name="name" id="name" value="Twój adres e-mail">
-                            <input type="text" name="name" id="name" value="Temat">
-                            <input type="text" name="name" id="name" value="Wiadomość">
-                            <button type="submit" class="button">Wyślij</button>
-                        </form>
-                    </section>
-                </div>
             </header>
+            <div class="content">
+                <section class="contact">
+                    <div class="message">
+                        <p>
+                            Masz pytanie? Napisz do mnie, a postaram się odpowiedzieć najszybciej jak to tylko
+                            możliwe.
+                        </p>
+                    </div>
+                    <div class="contactData">
+                        <strong>
+                            Damian Bartosz
+                            <br>
+                            Polska, Wrocław
+                        </strong>
+                        <br>
+                        ul. Bezpieczna 21
+                        <br>
+                        +48 123-456-789
+                        <br>
+                        <a href="">abc@gmail.com</a>
+                    </div>
+                </section>
+                <section class="mailMe">
+                    <form>
+                        <input type="text" name="name" id="name" value="Imie">
+                        <input type="text" name="name" id="name" value="Twój adres e-mail">
+                        <input type="text" name="name" id="name" value="Temat">
+                        <input type="text" name="name" id="name" value="Wiadomość">
+                        <button type="submit" class="button">Wyślij</button>
+                    </form>
+                </section>
+            </div>
+
         </article>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
