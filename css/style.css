@@ -20,6 +20,10 @@ ul {
     list-style-type: none;
     margin: 0;
 }
+nav{
+    width: 40%;
+    min-width: 360px;
+}
 
 nav>ul {
     display: flex;
@@ -29,7 +33,7 @@ nav>ul {
 }
 
 nav li {
-    padding: 0 5px;
+    padding: 0;
 }
 
 a {
@@ -71,14 +75,19 @@ h3 {
     background-size: cover;
 }
 
-.banner h1{
+
+.banner h1 {
     color: var(--font-color);
     text-shadow: 0 0 5px white;
 }
 
-.banner h3{
+.banner h3 {
     color: white;
     text-shadow: 0 0 0.2em var(--font-color);
+}
+
+.icons{
+    margin-top: 3rem;
 }
 
 .buttons {
@@ -134,6 +143,10 @@ h3 {
     border-radius: 5px;
 }
 
+.content img {
+    margin: 5px 0;
+}
+
 .photo {
     width: 10%;
 }
@@ -157,6 +170,13 @@ h3 {
     width: 0;
     align-self: stretch;
     border-left: 4px dotted var(--main-color);
+    margin: 0 10px;
+}
+
+#prof{
+    border-radius: 50%;
+    max-width: 290px;
+    max-height: 290px;
 }
 
 .distinction {
@@ -182,31 +202,31 @@ h3 {
     width: 70%;
 }
 
-.row{
+.row {
     color: white;
 }
 
-.software{
+.software {
     background: url(../img/code-coding-conceptual-276452.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.first{
+.first {
     background: url(../img/blurred-background-coffee-cup-contemporary-908284.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.second{
+.second {
     background: url(../img/design-development-electronics-326424.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.third{
+.third {
     background: url(../img/arachnid-art-black-and-white-206901.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.web{
+.web {
     background: url(../img/apple-black-and-white-camera-196659.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -241,22 +261,23 @@ h3 {
     margin: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding: 5%;
+    padding: 2%;
     padding-right: 15%;
     color: white;
     width: 30%;
     min-width: 130px;
     box-shadow: 5px 0px 5px 0px rgba(200, 200, 250, 0.5);
+    position: relative;
 }
 
 .contact a {
     color: white;
 }
 
+
 input[type="text"],
 textarea {
     border-radius: 5px;
-    border: 1px solid var(--main-color);
     border: none;
     margin: 5px auto;
     width: 100%;
