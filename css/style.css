@@ -1,3 +1,4 @@
+/* Root styles */
 :root {
     --main-color: #5656ff;
     --font-color: rgb(0, 47, 255);
@@ -8,56 +9,15 @@ body {
     overflow-x: hidden;
 }
 
-.bar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 5% 0 5%;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-}
-
-#dev {
-    font-size: 2rem;
-    min-width: 105px;
-}
-
 ul {
-    list-style-type: none;
     margin: 0;
+    list-style-type: none;
 }
 
-nav {
-    width: 40%;
-    min-width: 360px;
-}
-
-.menu {
-    display: none;
-}
-
-nav>ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    font-size: 1.2rem;
-}
-
-nav li {
-    padding: 0;
-}
-
-a {
-    text-decoration-line: none;
-    color: #000;
-}
-
+a,
 a:hover {
     text-decoration-line: none;
-    color: black;
+    color: #000;
 }
 
 h1 {
@@ -65,70 +25,22 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
     width: 100%;
+    font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 2.5rem;
     margin-top: 40px;
     margin-bottom: 0;
+    font-size: 2.5rem;
 }
 
-.banner {
-    width: 100%;
-    margin: 0;
-    margin-top: 40px;
-    text-align: center;
-    padding-top: 77px;
-    padding-bottom: 290px;
-    background: url("../img/internet-keyboard-laptop-109371.jpg") no-repeat center center;
-    background-size: cover;
+article {
+    position: relative;
+    margin-top: 200px;
 }
 
-
-.banner h1 {
-    color: var(--font-color);
-    text-shadow: 0 0 10px white;
-}
-
-.banner h3 {
-    color: white;
-    text-shadow: 0 0 0.2em var(--font-color);
-}
-
-.icons {
-    margin-top: 3rem;
-}
-
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.button {
-    height: 40px;
-    width: 100%;
-    align-self: center;
-    background-image: linear-gradient(-90deg, var(--font-color), var(--main-color));
-    border-radius: 15px;
-    border: none;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.button:hover,
-.button:focus {
-    transition: all 0.15s ease-in-out;
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
-    background-image: none;
-    background-color: #fff;
-    outline: none;
-}
-
+/* Button styles */
 .buttonOutside {
     display: flex;
     justify-content: center;
@@ -140,19 +52,111 @@ h3 {
     border: none;
 }
 
-article {
-    position: relative;
-    margin-top: 200px;
+.button {
+    align-self: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background-image: linear-gradient(-90deg, var(--font-color), var(--main-color));
+    transition: all 0.2s ease-in-out;
 }
 
+.button:hover,
+.button:focus {
+    border: 1px solid var(--main-color);
+    outline: none;
+    color: var(--main-color);
+    background-image: none;
+    background-color: #fff;
+}
+
+/* Site header */
+
+/* Bar styles */
+#bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5% 0 5%;
+    background-color: white;
+    z-index: 1;
+}
+
+#dev {
+    min-width: 105px;
+    font-size: 2rem;
+}
+
+/* Navigation Menu */
+nav {
+    width: 40%;
+    min-width: 360px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#menu {
+    display: none;
+    min-width: 60px;
+}
+
+/* Banner styles */
+#banner {
+    text-align: center;
+    width: 100%;
+    padding-top: 77px;
+    padding-bottom: 290px;
+    margin: 0;
+    margin-top: 40px;
+    background: url("../img/internet-keyboard-laptop-109371.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#banner h1 {
+    color: var(--font-color);
+    text-shadow: 0 0 10px white;
+}
+
+#banner h3 {
+    color: white;
+    text-shadow: 0 0 0.2em var(--font-color);
+}
+
+/* Icons with links to social media */
+.icons {
+    margin-top: 3rem;
+}
+
+/* How can I help you section */
+#canIHelp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Main styles */
+
+/* Grey boxes behind aboutMe and skills sections */
 .greyBox {
-    background-color: rgba(230, 230, 230, 0.2);
+    position: absolute;
+    top: -70px;
     box-sizing: content-box;
     height: 100%;
     width: 70%;
     padding: 70px 0;
-    position: absolute;
-    top: -70px;
+    background-color: rgba(230, 230, 230, 0.2);
     z-index: -1;
 }
 
@@ -164,56 +168,51 @@ article {
     right: 0;
 }
 
+/* Content of aboutMe section and skills section */
 .content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
+    padding: 20px;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 3px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.30);
-    padding: 20px;
-    text-align: justify;
     border-radius: 5px;
-    z-index: 1;
+    text-align: justify;
     background-color: #fff;
+    z-index: 1;
 }
 
 .content img {
     margin: 5px 0;
 }
 
-.photo {
-    width: 10%;
+.dotts {
+    align-self: stretch;
+    width: 0;
+    border-left: 4px dotted var(--main-color);
+    margin: 0 10px;
 }
 
-.shortInfo {
+/* AboutMe section styles */
+.distinction {
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+#aboutMe header {
+    position: relative;
+    left: 10%;
+    width: 90%;
+}
+
+#shortInfo {
+    display: flex;
     min-width: 350px;
     width: 20%;
     line-height: 1.5;
-    display: flex;
-}
-
-.longInfo {
-    width: 60%;
-}
-
-.info {
-    text-align: center;
-    width: 25%;
-}
-
-.info img {
-    height: 90px;
-    margin: 5px auto;
-}
-
-.dotts {
-    width: 0;
-    align-self: stretch;
-    border-left: 4px dotted var(--main-color);
-    margin: 0 10px;
 }
 
 #prof {
@@ -224,15 +223,19 @@ article {
     width: 30%;
 }
 
-.distinction {
-    color: var(--font-color);
-    font-weight: bold;
+#longInfo {
+    width: 60%;
 }
 
-#aboutMe header {
-    position: relative;
-    left: 10%;
-    width: 90%;
+/* Skills section styles */
+.info {
+    width: 25%;
+    text-align: center;
+}
+
+.info img {
+    height: 90px;
+    margin: 5px auto;
 }
 
 #skills header {
@@ -241,101 +244,86 @@ article {
     width: 80%;
 }
 
-#portfolio {
+/* Portfolio styles with bootstrap */
+#portfolio header {
     position: relative;
     left: 30%;
     width: 70%;
-}
-
-#contact {
-    position: relative;
-    left: 40%;
-    width: 60%;
 }
 
 .row {
     color: white;
 }
 
-.software {
-    background: url(../img/code-coding-conceptual-276452.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.first {
-    background: url(../img/blurred-background-coffee-cup-contemporary-908284.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.second {
-    background: url(../img/design-development-electronics-326424.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.third {
-    background: url(../img/arachnid-art-black-and-white-206901.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.web {
-    background: url(../img/apple-black-and-white-camera-196659.jpg) no-repeat center center;
-    background-size: cover;
-}
-
 .row>* {
     height: 300px;
 }
 
-.mailMe {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
+#software {
+    background: url(../img/code-coding-conceptual-276452.jpg) no-repeat center center;
+    background-size: cover;
 }
 
+#first {
+    background: url(../img/blurred-background-coffee-cup-contemporary-908284.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#second {
+    background: url(../img/design-development-electronics-326424.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#third {
+    background: url(../img/arachnid-art-black-and-white-206901.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#web {
+    background: url(../img/apple-black-and-white-camera-196659.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* Contact section styles */
+#contact header{
+    position: relative;
+    left: 40%;
+    width: 60%;
+}
+
+/* Section with contact informations */
 #contactContent {
     padding: 0;
 }
 
-.contact {
+#contactInfo {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: content-box;
-    background-color: var(--main-color);
     align-self: stretch;
-    margin: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 2%;
-    padding-right: 15%;
-    color: white;
+    box-sizing: content-box;
     width: 30%;
     min-width: 130px;
+    padding: 2%;
+    padding-right: 15%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+    color: white;
+    background-color: var(--main-color);
     box-shadow: 5px 0px 5px 0px rgba(200, 200, 250, 0.5);
-    position: relative;
 }
 
-.contact a {
+#contactInfo a {
     color: white;
 }
 
-
-input[type="text"],
-textarea {
-    border-radius: 5px;
-    border: none;
-    margin: 5px auto;
-    width: 100%;
-    background-color: rgb(240, 240, 240);
-    padding: 10px;
-    outline: none;
-}
-
-input[type="text"]:focus,
-textarea:focus {
-    box-shadow: 0px 0px 5px 2px rgba(200, 200, 250, 0.5);
-    border: 1px solid rgb(200, 200, 250);
-    background-color: rgb(230, 230, 250);
+/* Section with form to mail me */
+#mailMe {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
 }
 
 form {
@@ -344,40 +332,66 @@ form {
 }
 
 form .button {
-    width: 20%;
-    min-width: 80px;
     position: absolute;
     right: 0;
+    width: 20%;
+    min-width: 80px;
     bottom: 0;
 }
 
-#mes {
-    height: 150px;
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 5px auto;
+    background-color: rgb(240, 240, 240);
 }
 
+input[type="text"]:focus,
+textarea:focus {
+    border: 1px solid rgb(200, 200, 250);
+    background-color: rgb(230, 230, 250);
+    box-shadow: 0px 0px 5px 2px rgba(200, 200, 250, 0.5);
+}
+
+.icon-play:before {
+    color: var(--main-color);
+}
+
+/* Media queries for RWD */
+
 @media screen and (max-width: 768px) {
-    .shortInfo {
+    /* AboutMe section */
+    #shortInfo {
         flex-direction: column;
-        min-width: 250px;
         justify-content: space-between;
+        min-width: 250px;
     }
 
     #prof {
-        margin: auto;
         width: 50%;
+        margin: auto;
     }
 
+    /* Contact section */
     #contactContent {
         flex-direction: column;
     }
 
-    .contact {
-        width: 100%;
+    #contactInfo {
         box-sizing: border-box;
+        width: 100%;
         padding: 5%;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 0;
+    }
+
+    #contactData {
+        text-align: right;
     }
 
     .icon-play:before {
@@ -386,14 +400,12 @@ form .button {
         left: 10%;
         font-size: 45px;
     }
-
-    .contactData {
-        text-align: right;
-    }
 }
 
 @media screen and (max-width: 576px) {
-    .menu {
+
+    /* Navigation menu */
+    #menu {
         position: absolute;
         display: block;
         top: 10px;
@@ -402,76 +414,82 @@ form .button {
         width: 20%;
     }
 
-    header .bar {
-        background-color: white;
-    }
-
     nav ul {
-        flex-direction: column;
-        padding: 0 5%;
         position: absolute;
         top: 100%;
         right: 0;
+        flex-direction: column;
+        padding: 0 5%;
         background-color: white;
         border-bottom-left-radius: 5px;
         transition: all 0.5s ease-in-out;
         transform: translateX(100%)
     }
 
-    .menu:focus~nav ul,
-    .menu:hover~nav ul,
+    #menu:focus~nav ul,
+    #menu:hover~nav ul,
     nav ul:hover {
         transform: translateX(0);
     }
 
-
+    /* Content of aboutMe and skills sections */
     .content {
         flex-direction: column;
     }
 
-    .shortInfo {
-        flex-direction: row;
-        min-width: 350px;
-    }
-
-    .longInfo {
-        width: 90%;
-    }
-
-    #prof {
-        margin: auto;
-        width: 30%;
-    }
-
     .dotts {
+        align-self: stretch;
         height: 0;
         width: auto;
-        align-self: stretch;
         border-top: 4px dotted var(--main-color);
         margin: 10px 0;
     }
 
+    /* AboutMe section */
+    #shortInfo {
+        flex-direction: row;
+        min-width: 350px;
+    }
+
+    #longInfo {
+        width: 90%;
+    }
+
+    #prof {
+        width: 30%;
+        margin: auto;
+    }
+
+    /* Skills section */
     .info {
         width: 90%;
     }
 
-    .first {
+    /* Portfolio section */
+    #first {
         order: -1;
     }
 
-    .third {
+    #third {
         order: 1;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .shortInfo {
+
+    /* Content of aboutMe and skills sections */
+    .content {
+        width: 100%;
+    }
+
+    /* AboutMe section */
+    #shortInfo {
         flex-direction: column;
         width: 100%;
         min-width: 0px;
     }
 
-    .shortInfo ul {
+    #shortInfo ul {
         padding: 0;
     }
 
@@ -479,18 +497,15 @@ form .button {
         width: 150px;
     }
 
-    .longInfo {
+    #longInfo {
         width: 100%;
     }
 
-    .content {
-        width: 100%;
-    }
-
+    /* Position of articles headers */
     #aboutMe header,
     #skills header,
-    #portfolio,
-    #contact {
+    #portfolio header,
+    #contact header{
         position: relative;
         left: 0;
         width: 100%;
