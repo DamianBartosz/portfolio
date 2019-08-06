@@ -1,16 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="pl">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
     <title>Damian Bartosz - Portfolio</title>
     <meta name="description" content="Strona zawierająca portfolio Damiana Bartosza">
     <meta name="keywords" content="portfolio, wizytówka, Damian, Bartosz, programista, web, developer">
     <meta name="author" content="Damian Bartosz">
-
-    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 
     <!-- Links to favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -82,7 +81,7 @@
                     <ul>
                         <li>Imie: <span class="distinction">Damian</span></li>
                         <li>Nazwisko: <span class="distinction">Bartosz</span></li>
-                        <li>Wiek: <span class="distinction">20 lat</span></li>
+                        <li>Wiek: <span id="age" class="distinction"></span></li>
                         <li>Profil: <span class="distinction">Fullstack</span></li>
                         <li>Telefon: <span class="distinction">+48 123-456-789</span></li>
                         <li>E-mail: <span class="distinction">abc@gmail.com</span></li>
@@ -205,6 +204,25 @@
     </script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onload = function () {
+            const birth = new Date(1999, 4, 27);
+            const now = new Date;
+
+            let age = now.getFullYear() - birth.getFullYear();
+            if (now.getMonth() < birth.getMonth() || now.getMonth() === birth.getMonth() && now.getDay() < birth
+                .getDay()) {
+                age--;
+            }
+            
+            let years = " lat";
+            if(age%10===2||age%10===3||age%10===4){
+                years = " lata";
+            }
+
+            document.getElementById('age').innerHTML = age + years;
+        }
+    </script>
 </body>
 
 </html>
