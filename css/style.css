@@ -7,6 +7,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -22,11 +23,13 @@ a:hover {
 
 h1 {
     font-size: 6rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
     width: 100%;
     font-size: 3.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h3 {
@@ -39,6 +42,9 @@ article {
     position: relative;
     margin-top: 200px;
 }
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700&display=swap');
 
 /* Button styles */
 .buttonOutside {
@@ -285,7 +291,7 @@ nav ul {
 }
 
 /* Contact section styles */
-#contact header{
+#contact header {
     position: relative;
     left: 40%;
     width: 60%;
@@ -364,6 +370,7 @@ textarea:focus {
 /* Media queries for RWD */
 
 @media screen and (max-width: 768px) {
+
     /* AboutMe section */
     #shortInfo {
         flex-direction: column;
@@ -505,7 +512,7 @@ textarea:focus {
     #aboutMe header,
     #skills header,
     #portfolio header,
-    #contact header{
+    #contact header {
         position: relative;
         left: 0;
         width: 100%;
